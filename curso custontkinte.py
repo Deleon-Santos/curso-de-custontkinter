@@ -11,6 +11,8 @@ janela.geometry('700*400') #janela recebe um tamanho
 janela.maxsize(width=900, height=550)
 janela.minsize(width=500,height=300)
 janela.resizable(width=True, height=True) # janela pode ser flexivel ou nao
+janela.iconify()
+janela.deiconify()
 
 btn = ctk.CTkButton(janela, text="ok")  # O botão recebe o comando CTkButton (corrigido) e integra a janela com o texto
 btn.pack()
