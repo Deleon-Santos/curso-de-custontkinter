@@ -13,7 +13,7 @@ janela.minsize(width=500,height=300)
 janela.resizable(width=True, height=True) # janela pode ser flexivel ou nao
 
 #crindo um frame no custonTkinter
-frame1 = ctk.CTkFrame(master=janela,width=200,height=330, fg_color=('white'), bg_color='blue' ,corner_radius=10).place(x=10, y=60) # estou definindo a posição e tamanho do frame
+frame1 = ctk.CTkFrame(master=janela,width=200,height=330, fg_color=('white'), bg_color='blue' ,corner_radius=10).place(x=100, y=60) # estou definindo a posição e tamanho do frame
 frame2 = ctk.CTkFrame(janela, width=200 , height=330, fg_color='teal' ).place(x=230, y=60) # aqui tambem podemos atribuir bordas e cores de fundo aos frames
 frame2 = ctk.CTkFrame(janela, width=200 , height=330,fg_color='red' ).place(x=450, y=60) 
 
@@ -23,7 +23,7 @@ btn.pack()# criando uma botão no custontkinter
 #costumizando o tema da nossa aplicação
 janela._set_appearance_mode("light")#comando para trocar o tema da aplicação
 
-tabview=ctk.CTkTabview(janela,width=500 corne_radius=20, border_width=1,border_color='red',
+tabview=ctk.CTkTabview(janela,width=500,corner_radius=20, border_width=1,border_color='red',
 fg_color='teal', segmented_button_fg_color='red', segmented_button_selected_color= 'green,')
 
 tabview.pack()
